@@ -8,7 +8,7 @@ import re
 
 # Method for download file pdf
 def download_file(current_file):
-    print('Sto per scaricare il file ' + current_file + '\n')
+    print('Download file: ' + current_file + '\n')
     url = 'https://locandine.lottomatica.it/WebPosterOdds/locandine/ARE/Scommesse/Quote/Calcio/' + current_file
     r = requests.get(url, allow_redirects=True)
 
